@@ -1,0 +1,20 @@
+<div class="container">
+    <% if user_signed_in? %>
+        <div class="row">
+            <div class="col-6 text-align-center">
+                <h1>Welcome to MemoLife, <%= user.name %></h1>
+            </div>
+        </div>
+    <% end %>
+    <h1>UsersBackoffice::Welcome#index</h1>
+
+    <p>Find me in app/views/users_backoffice/welcome/index.html.erb</p>
+
+    <%= link_to "Create Post", new_post_path %>
+
+    <%= link_to "View Posts", posts_path %>
+
+    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+
+    <%= link_to "Homepage", root_path %>
+</div>

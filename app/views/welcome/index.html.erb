@@ -1,0 +1,61 @@
+<div class="container text-center   ">
+    <% if user_signed_in? %>
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to <b>MemoLife</b>, <%= current_user.first_name %>!</h1>
+            </div>
+        </div>
+        <div class="my-5">
+            <div class="row">
+                <div class="col">
+                    <h2>Unleash your creativity:</h2>
+                    <p>Explore the boundless possibilities of journaling with MemoLife. Let your words
+                        come alive as you craft beautifully formatted pages that reflect your unique style.</p>
+                </div>
+            </div>
+        </div>
+        <div class="my-5">
+            <div class="row">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <%= link_to "Create a post", new_post_path, class: "btn btn-primary btn-block", type: "button" %>
+                    <% if @post %>
+                        <%= link_to "Check out yout posts", posts_path , class: "btn btn-primary btn-block", type: "button" %>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    <% else %>
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to <b>MemoLife</b>!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="my-5">
+                <div class="col">
+                    <h2>Start your journaling journey with <b>MemoLife</b> today:</h2>
+                    <p>
+                    Sign up for your free account and unlock the endless possibilities of journaling. Whether you're a seasoned journaler or
+                    just starting out, MemoLife is here to accompany you every step of the way. Begin preserving your memories, capturing
+                    your thoughts, and embracing personal growth. Your journal, your story, your MemoLife. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="my-5">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <%= button_to "Log In", new_user_session_path, class: "btn btn-primary btn-block" %>
+                    <%= button_to "Sign Up" , user_registration_path, class: "btn btn-primary btn-block" %>
+                </div>
+            </div>
+        </div>
+    <% end %>
+
+    <!-- <%= link_to "Create Post" , new_post_path %>
+
+    <%= link_to "View Posts" , posts_path %>
+
+    <%= button_to "Logout" , destroy_user_session_path, method: :delete %>
+
+    <%= link_to "Homepage" , root_path %> -->
+</div>

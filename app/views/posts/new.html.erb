@@ -1,0 +1,21 @@
+<div class="container text-center">
+  <div class="row my-5 justify-content-center">
+    <div class="col-6">
+      <div class="card text-center">
+        <div class="card-header">
+          New Post
+        </div>
+        <div class="card-body">
+          <%= render "form" , post: @post %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <%= link_to "Back to posts" , posts_path, class: "btn btn-primary btn-block", type: "button"  %>
+    </div>
+  </div>
+</div>
