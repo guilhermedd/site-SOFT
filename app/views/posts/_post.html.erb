@@ -22,7 +22,8 @@
               <ul class="dropdown-menu">
                 <li><%= link_to "Edit this post", edit_post_path(post), class: "dropdown-item" %></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><%= button_to "Destroy this post", post, method: :delete, class:"dropdown-item" %></li>
+                <li><%= button_to "Destroy this post", post, method: :delete, class:"dropdown-item", data: {
+                            confirm: "Are you sure?" , turbo_confirm: "Are you sure?" } %></li>
               </ul>
             </div>
           </div>

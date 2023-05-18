@@ -13,6 +13,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
+    @posts = Post.all
     @post = Post.new
   end
 

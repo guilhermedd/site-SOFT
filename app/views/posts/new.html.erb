@@ -15,7 +15,11 @@
   <br>
   <div class="row justify-content-center">
     <div class="col-6">
+      <% if @posts.length > 0 %>
       <%= link_to "Back to posts" , posts_path, class: "btn btn-primary btn-block", type: "button"  %>
+      <% else %>
+      <%= link_to "Homepage" , root_path, class: "btn btn-primary btn-block" , type: "button" %>
+      <% end %>
     </div>
   </div>
 </div>

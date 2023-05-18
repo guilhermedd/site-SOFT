@@ -1,0 +1,36 @@
+<%= form_for(resource, as: resource_name, url: user_registration_path) do |f| %>
+
+    <div class="mb-3">
+        <%= f.label :email, for: "exampleFormControlTitle" ,class: "form-label" %>
+            <%= f.email_field :email, class: "form-control" , type: "email" , placeholder: "name@example.com" %>
+    </div>
+    <div class="mb-3">
+        <%= f.label :first_name, for: "exampleFormControlTitle" ,class: "form-label" %>
+            <%= f.text_field :first_name, class: "form-control" , type: "text" , placeholder: "John" %>
+    </div>
+    <div class="mb-3">
+        <%= f.label :last_name, for: "exampleFormControlTitle" ,class: "form-label" %>
+            <%= f.text_field :last_name, class: "form-control" , type: "text" , placeholder: "Smith" %>
+    </div>
+    <div class="mb-3">
+        <%= f.label :password, for: "inputPassword5" ,class: "form-label" %>
+            <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> characters minimum)</em>
+                <% end %><br />
+                    <%= f.password_field :password, class: "form-control" , type: "password" %>
+                        <div id="passwordHelpBlock" class="form-text">
+                            Your password must be 6-20 characters long, contain letters and numbers, and must not
+                            contain
+                            spaces, special
+                            characters, or emoji.
+                        </div>
+    </div>
+    <div class="mb-3">
+        <%= f.label :password_confirmation, for: "inputPassword5" ,class: "form-label" %>
+            <%= f.password_field :password_confirmation, class: "form-control" , type: "password" %>
+    </div>
+
+    <div class="actions justify-content-center">
+        <%= f.submit "Sign up" , class: "btn btn-primary" %>
+    </div>
+    <% end %>

@@ -1,6 +1,12 @@
-  <p style="color: green"><%= notice %></p>
+<p style="color: green">
+  <% if notice %>
+    <div class="alert alert-success" role="alert">
+      <%= notice %>
+    </div>
+    <% end %>
+</p>
 
-<h1>Posts</h1>
+<h1 class="text-center">Posts</h1>
 
 <div id="posts">
   <div class="container justify-content-center">
@@ -10,18 +16,20 @@
       </div>
     </div>
 
-  </div>
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <div class="container text-center">
-        <div class="row justify-content-center mb-5">
-          <div class="col-6 mb-5">
-            <div class="d-grid col-6 mx-auto">
-              <%= link_to "Show Post" , post, class: "btn btn-primary btn-block" , type: "button" %>
+    <div class="container text-center justify-content-center">
+      <% @posts.each do |post| %>
+        <%= render partial: 'shortPost' , locals: {post: post} %>
+          <div class="row justify-content-center mb-5">
+            <div class="col-6 mb-5">
+              <div class="d-grid col-6 mx-auto">
+                <div class="space mb-5">
+                </div>
+                <%= link_to "Show Post" , post, class: "btn btn-primary btn-block" , type: "button" %>
+              </div>
             </div>
           </div>
-        </div>
+          <% end %>
     </div>
-  <% end %>
-</div>
 
+  </div>
+</div>

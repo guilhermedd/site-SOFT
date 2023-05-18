@@ -1,10 +1,18 @@
-<h1>Editing post</h1>
-
-<%= render "form", post: @post %>
-
-<br>
-
-<div>
-  <%= link_to "Show this post", @post %> |
-  <%= link_to "Back to posts", posts_path %>
-</div>
+<div class="mb-3"></div>
+<div class="container text-center">
+  <div class="row mb-3 justify-content-center">
+    <div class="col-6">
+      <div class="card text-center">
+        <div class="card-header">
+          Editing Post
+        </div>
+        <div class="card-body">
+          <%= render "form" , post: @post %>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div>
+      <%= link_to "Show this post" , @post , class: "btn btn-primary"%>
+        <%= link_to "Back to posts" , posts_path, class: "btn btn-primary" %>
+    </div>

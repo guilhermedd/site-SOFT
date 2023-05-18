@@ -1,0 +1,31 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+    <div class="mb-3">
+        <%= f.label :email, for: "exampleFormControlTitle" ,class: "form-label" %>
+            <%= f.email_field :email, class: "form-control" , type: "email" , placeholder: "name@example.com" %>
+    </div>
+    <div class="mb-3">
+        <%= f.label :password, for: "inputPassword5" ,class: "form-label" %>
+            <%= f.password_field :password, class: "form-control" , type: "password" %>
+    </div>
+    <% if devise_mapping.rememberable? %>
+        <div class="mb-3">
+            <div class="form-check">
+                <div class="row">
+                    <div class="col-3 offset-md-3">
+                        <%= f.label :remember_me, class: "form-check-label" , id: "exampleFormControlTextarea1" ,
+                            rows: "3" , placeholder: "Here is the place you write down whatever you want" %>
+                    </div>
+
+                    <div class="col-1">
+                        <%= f.check_box :remember_me, type: "checkbox" , class: "form-check-label" ,
+                            id: "flexCheckChecked" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% end %>
+            <div class="actions justify-content-center">
+                <%= f.submit "Log in" , class: "btn btn-primary" %>
+            </div>
+            <% end %>
