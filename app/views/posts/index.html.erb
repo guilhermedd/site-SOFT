@@ -3,12 +3,25 @@
 <h1>Posts</h1>
 
 <div id="posts">
-  <% @posts.each do |post, time, day| %>
+  <div class="container justify-content-center">
+    <div class="row-6">
+      <div class="d-grid col-6 mx-auto mb-5">
+        <%= link_to "New post" , new_post_path, class: "btn btn-primary btn-block" , type: "button" %>
+      </div>
+    </div>
+
+  </div>
+  <% @posts.each do |post| %>
     <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
+    <div class="container text-center">
+        <div class="row justify-content-center mb-5">
+          <div class="col-6 mb-5">
+            <div class="d-grid col-6 mx-auto">
+              <%= link_to "Show Post" , post, class: "btn btn-primary btn-block" , type: "button" %>
+            </div>
+          </div>
+        </div>
+    </div>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>

@@ -4,18 +4,11 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
-    @posts = []
-    Post.where(user_id: current_user.id).foreach do |post|
-      @posts << (post, post.created_at.strftime("%H:%M"), post.created_at.strftime("%d:%m:%Y"))
-    end
+    @posts = Post.where(user_id: current_user.id)
   end
 
   # GET /posts/1 or /posts/1.json
   def show
-    @post = Post.find(params[:id])
-
-    @time = @post.created_at.strftime("%H:%M")
-    @day = @post.created_at.strftime("%d:%m:%Y")
   end
 
   # GET /posts/new
