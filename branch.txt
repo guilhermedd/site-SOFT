@@ -1,0 +1,2 @@
+git checkout -v <branch_name>
+
