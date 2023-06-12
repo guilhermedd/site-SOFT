@@ -1,6 +1,8 @@
-<p style="color: green">
-  <%= notice %>
-</p>
+  <% if notice %>
+  <div class="alert alert-success" role="alert">
+    <%= notice %>
+  </div>
+  <% end %>
 
 <div class="container text-center">
   <%= render @post %>

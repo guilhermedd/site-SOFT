@@ -19,11 +19,13 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    @post.public = params[:post][:public] == '1' 
   end
 
   # POST /posts or /posts.json
   def create
     @post = Post.new(post_params)
+    @post.public = params[:post][:public] == '1'
 
     @post.user = current_user
 

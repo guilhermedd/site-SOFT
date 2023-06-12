@@ -8,6 +8,10 @@
             <%= f.label :email, for: "exampleFormControlTitle" ,class: "form-label" %>
                 <%= f.email_field :email, class: "form-control" , type: "email" , placeholder: "name@example.com" %>
         </div>
+        <div class="mb-3">
+            <%= f.label :username, for: "exampleFormControlTitle" ,class: "form-label" %>
+                <%= f.email_field :username, class: "form-control" , type: "text" , placeholder: "coolUsername" %>
+        </div>
 
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
             <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %>
