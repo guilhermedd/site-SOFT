@@ -1,0 +1,21 @@
+<% if @posts == []%>
+<div class="alert alert-danger my-5" role="alert">
+    Seu(Sua) amigo(a) não possui nenhum post!
+</div>
+<% else %>
+<p>OIEE</p>
+
+<% @posts.each do |post| %>
+    <%= render partial: 'shortPost' , locals: {post: post} %>
+        <div class="row justify-content-center mb-5">
+            <div class="col-6 mb-5">
+                <div class="d-grid col-6 mx-auto">
+                    <div class="space mb-5">
+                    </div>
+                    <%= link_to "Show Post" , post, class: "btn btn-primary btn-block" , type: "button" %>
+                </div>
+            </div>
+        </div>
+        <% end %>
+
+<% end %>

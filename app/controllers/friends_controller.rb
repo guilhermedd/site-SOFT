@@ -9,16 +9,21 @@ class FriendsController < ApplicationController
       @friends = []
     else
       terms = search_term.split
-      @friends = User.where("first_name LIKE ? OR last_name LIKE ? OR email LIKE ?", "%#{terms[0]}%", "%#{terms[0]}%", "%#{terms[0]}%").where.not(id: current_user.id)
+      @friends = User.where("first_name LIKE ? OR last_name LIKE ? OR email LIKE ?", "%#{terms[0]}%", "%#{terms[0]}%", "%#{terms[0]}%")
 
       terms.drop(1).each do |term|
-        @friends = @friends.or(User.where("first_name LIKE ? OR last_name LIKE ? OR email LIKE ?", "%#{term}%", "%#{term}%", "%#{term}%")).where.not(id: current_user.id)
+        @friends = @friends.or(User.where("first_name LIKE ? OR last_name LIKE ? OR email LIKE ?", "%#{term}%", "%#{term}%", "%#{term}%"))
       end
     end
   end
 
   def friendProfile
-    @posts = Post.where(user_id: params[:friend_id])
+    
+    if !Post.where("user_id = ? AND public = true", params[:friend_id]).empty?
+      @posts = Post.where("user_id = ? AND public = true", params[:friend_id])
+    else
+      @posts = []
+    end
   end
 
   # GET /friends/1 or /friends/1.json

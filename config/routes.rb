@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
+  resources :psychologists
+  resources :consultations
   resources :friends
   resources :posts
+  resources :consultations
+  resources :psychologists
+  resources :posts, only: [:update]
+
   namespace :users_backoffice do
     get 'welcome/index'
   end
   devise_for :users, controllers: { registrations: "users/registrations" }
+
   get 'friend_profile', to: 'friends#friendProfile'
   get 'show_friends', to: 'friends#show'
   get 'friends_index', to: 'friends#index'

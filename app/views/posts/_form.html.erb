@@ -14,31 +14,31 @@
           <% end %>
       </ul>
     </div>
-  <% end %>
+    <% end %>
 
-  <div class="mb-3">
-        <%= form.label :title, for: "exampleFormControlTitle",class: "form-label" %>
-        <%= form.text_field :title, class: "form-control", placeholder: "Write a nice title" %>
-  </div>
-  <div class="mb-3">
-    <%= form.label :summary, for: "exampleFormControlTitle" ,class: "form-label" %>
-    <%= form.text_field :summary, class: "form-control" , placeholder: "What happened?" %>
-  </div>
-  <div class="mb-3">
-    <%= form.label :content, for: "exampleFormControlTextarea1", class: "form-label" %>
-    <%= form.text_area :content, class: "form-control", id: "exampleFormControlTextarea1", rows: "3", placeholder: "Here is the place you write down whatever you want" %>
-  </div>
-  <div class="mb-3">
-    <%= form.label :feeling, for: "exampleFormControlTitle", class: "form-label"%>
-    <%= form.text_field :feeling, class: "form-control", id: "exampleFormControlTitle", placeholder: "How were you feeling?" %>
-  </div>
-  <div>
-    <%= form.label :public, 'Public' %>
-    <%= form.check_box :public %>
-  </div>
+      <div class="mb-3">
+        <%= form.label :title, for: "exampleFormControlTitle" ,class: "form-label" %>
+          <%= form.text_field :title, class: "form-control" , placeholder: "Write a nice title" %>
+      </div>
+      <div class="mb-3">
+        <%= form.label :summary, for: "exampleFormControlTitle" ,class: "form-label" %>
+          <%= form.text_field :summary, class: "form-control" , placeholder: "What happened?" %>
+      </div>
+      <div class="mb-3">
+        <%= form.label :content, for: "exampleFormControlTextarea1" , class: "form-label" %>
+          <%= form.text_area :content, class: "form-control" , id: "exampleFormControlTextarea1" , rows: "3" ,
+            placeholder: "Here is the place you write down whatever you want" %>
+      </div>
+      <div class="mb-3">
+        <%= form.label :feeling, for: "exampleFormControlTitle" , class: "form-label" %>
+          <%= form.text_field :feeling, class: "form-control" , id: "exampleFormControlTitle" ,
+            placeholder: "How were you feeling?" %>
+      </div>
+      <div>
+        <%= form.label :public, 'Public' %>
+          <%= form.check_box :public %>
+      </div>
 
 
-  <div>
-    <%= form.submit "Submit" , class: "btn btn-primary" %>
-  </div>
-<% end %>
+        <%= form.submit "Submit" , class: "btn btn-primary" %>
+          <% end %>
