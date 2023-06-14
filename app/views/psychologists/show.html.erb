@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @psychologist %>
+
+<div>
+  <%= link_to "Edit this psychologist", edit_psychologist_path(@psychologist) %> |
+  <%= link_to "Back to psychologists", psychologists_path %>
+
+  <%= button_to "Destroy this psychologist", @psychologist, method: :delete %>
+</div>

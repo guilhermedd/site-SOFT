@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "16999000000004060",
+      "name": "MemoLife",
+      "domain": {
+        "id": "10058891817",
+        "name": "memolife-811402044.development"
+      },
+      "timezone": "America/Sao_Paulo",
+      "env": [
+        {
+          "idx": 1,
+          "id": "811402044",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<% if notice %>
+  <div class="alert alert-success" role="alert">
+    <%= notice %>
+  </div>
+  <% end %>
+
+<div class="container text-center">
+  <h1>Friends</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <form class="d-flex" role="search">
+        <%= form_with(url: friends_index_path, method: "get" , role: "search" ) do |form| %>
+          <%= form.text_field :search, class: "form-control me-2" , placeholder: "Search" , aria: { label: "Search" } %>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <% end %>
+
+      </form>
+      <div id="passwordHelpBlock" class="form-text">
+        You can search them by writing down their first name, last name or email.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center my-5">
+    <div class="col-6 d-grid justify-content-center">
+      <div id="friends">
+        <% @friends.each do |friend| %>
+          <%= render partial: 'friend' , locals: {friend: friend} %>
+            <% end %>
+      </div>
+    </div>
+  </div>
+</div>

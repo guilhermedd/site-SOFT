@@ -1,0 +1,16 @@
+<div id="<%= dom_id friend %>" class="my-3">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">
+                <%= friend.first_name %>
+                    <%= friend.last_name %>
+            </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <%= link_to "Go to Profile", friend_profile_path , class: "btn btn-primary"%>
+            </li>
+        </ul>
+
+    </div>

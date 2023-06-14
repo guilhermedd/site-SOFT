@@ -1,0 +1,17 @@
+<% if notice %>
+  <div class="alert alert-success" role="alert">
+    <%= notice %>
+  </div>
+<% end %>
+
+
+    <div class="container">
+      <div class="row justify-content-center my-5">
+        <div class="col-6 d-grid justify-content-center">
+          <% @friends.each do |friend| %>
+            <%= render partial: 'goToFriend' , locals: {friend: friend} %>
+              <% end %>
+                <!-- <%= button_to "Destroy this friend" , @friend, method: :delete %> -->
+        </div>
+      </div>
+    </div>

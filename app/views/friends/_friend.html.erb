@@ -1,0 +1,18 @@
+<div id="<%= dom_id friend %>" class="my-3">
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">
+        <%= friend.username %>
+      </h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <%= form_tag(create_friendship_friends_path, method: :post) do %>
+          <%= hidden_field_tag :friend_id, friend.id %>
+          <%= button_tag "Add Friend" , class: "btn btn-primary" , type: "submit" %>
+        <% end %>
+      </li>
+    </ul>
+
+  </div>

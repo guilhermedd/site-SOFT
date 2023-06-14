@@ -11,19 +11,23 @@ class PostsController < ApplicationController
   def show
   end
 
+
   # GET /posts/new
   def new
+
     @posts = Post.all
     @post = Post.new
   end
 
   # GET /posts/1/edit
   def edit
+    @post.public = params[:post][:public] == '1'
   end
 
   # POST /posts or /posts.json
   def create
     @post = Post.new(post_params)
+    @post.public = params[:post][:public] == '1'
 
     @post.user = current_user
 
@@ -53,13 +57,17 @@ class PostsController < ApplicationController
 
   # DELETE /posts/1 or /posts/1.json
   def destroy
+    @post = Post.find(params[:id])
     @post.destroy
 
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: "Post was successfully destroyed." }
+      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
+
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -69,6 +77,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:title, :user_id, :summary, :content, :feeling)
+      params.require(:post).permit(:title, :user_id, :summary, :content, :feeling, :public)
     end
 end
