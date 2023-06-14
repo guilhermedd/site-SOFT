@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Psychologists</h1>
+
+<div id="psychologists">
+  <% @psychologists.each do |psychologist| %>
+    <%= render psychologist %>
+    <p>
+      <%= link_to "Show this psychologist", psychologist %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New psychologist", new_psychologist_path %>
