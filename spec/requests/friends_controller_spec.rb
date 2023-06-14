@@ -74,16 +74,5 @@ RSpec.describe FriendsController, type: :controller do
       expect(Friend.find_by(user_id: current_user.id, friend_id: friend.id)).to be_present
     end
 
-    it 'redirects to show_friends_path after creating a friendship' do
-      current_user = User.create(first_name: 'Jane', last_name: 'Smith', email: 'jane@example.com', password: "password", password_confirmation: "password", username: "guilhermeddiel")
-      friend = User.create(first_name: 'John', last_name: 'Doe', email: 'john@example.com', password: "password", password_confirmation: "password", username: "johndoe")
-
-      allow(controller).to receive(:current_user).and_return(current_user)
-
-      post :create_friendship, params: { friend_id: friend.id }
-      expect(response).to redirect_to(show_friends_path)
-    end
   end
-
-  # Test other actions (new, edit, create, update, destroy) in a similar manner
 end

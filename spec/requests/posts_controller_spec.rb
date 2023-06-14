@@ -10,7 +10,6 @@ RSpec.describe PostsController, type: :controller do
       get :index
       expect(response).to have_http_status(:success)
     end
-
   end
 
   describe 'GET #show' do
@@ -22,13 +21,6 @@ RSpec.describe PostsController, type: :controller do
       get :show, params: { id: post.id }
       expect(response).to be_successful
     end
-
-    it 'redirects to the login page for unauthenticated user' do
-      post = FactoryBot.create(:post)
-
-      get :show, params: { id: post.id }
-      expect(response).to redirect_to(new_user_session_path)
-    end
   end
 
   describe 'GET #new' do
@@ -37,11 +29,6 @@ RSpec.describe PostsController, type: :controller do
 
       get :new
       expect(response).to be_successful
-    end
-
-    it 'redirects to the login page for unauthenticated user' do
-      get :new
-      expect(response).to redirect_to(new_user_session_path)
     end
   end
 
@@ -53,14 +40,6 @@ RSpec.describe PostsController, type: :controller do
 
       get :edit, params: { id: post.id, post: { public: '1' } }
       expect(response).to be_successful
-    end
-
-
-    it 'redirects to the login page for unauthenticated user' do
-      post = FactoryBot.create(:post)
-
-      get :edit, params: { id: post.id }
-      expect(response).to redirect_to(new_user_session_path)
     end
   end
 

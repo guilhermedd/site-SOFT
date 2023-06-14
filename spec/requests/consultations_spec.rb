@@ -2,22 +2,8 @@ require 'rails_helper'
 require 'timecop'
 
 RSpec.describe Consultation, type: :model do
-  let(:user) do
-    User.create(
-      first_name: 'Jane',
-      last_name: 'Smith',
-      email: 'jane@example.com',
-      password: 'password',
-      password_confirmation: 'password',
-      username: 'guilhermeddiel'
-    )
-  end
-
-  let(:psychologist) do
-    Psychologist.create(
-      name: 'John',
-      )
-  end
+  let(:user) { FactoryBot.create(:user) }
+  let(:psychologist) { FactoryBot.create(:psychologist) }
 
   it 'is valid with a scheduled_at, user, and psychologist' do
     consultation = Consultation.new(scheduled_at: DateTime.now, user: user, psychologist: psychologist)

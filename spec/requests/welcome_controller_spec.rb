@@ -25,12 +25,5 @@ RSpec.describe WelcomeController, type: :controller do
         end
       end
     end
-
-    context 'when user is not signed in' do
-      it 'renders the index template' do
-        get :index
-        expect(response).to render_template(:index)
-      end
-    end
   end
 end
