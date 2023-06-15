@@ -56,6 +56,6 @@ The website will be locally host on port http://127.0.0.1:3000
 In there, you`ll need to create an account and follow the steps on the screen to start posting about your feelings
 
 ```md
-![Main menu](https://github.com/guilhermedd/site-SOFT/blob/main/app/assets/images/SITE_SOFT.png?raw=true)
+![Main menu](https://github.com/guilhermedd/site-SOFT/blob/main/app/assets/images/SITE_SOFT.png)
 ```
 
