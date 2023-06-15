@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   end
   devise_for :users, controllers: { registrations: "users/registrations" }
 
+  get 'schedule', to: 'consultations#show'
   get 'friend_profile', to: 'friends#friendProfile'
   get 'show_friends', to: 'friends#show'
   get 'friends_index', to: 'friends#index'

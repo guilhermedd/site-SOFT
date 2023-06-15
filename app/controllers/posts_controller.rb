@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post.public = params[:post][:public] == '1'
+    # @post.public = params[:post][:public] == '1'
   end
 
   # POST /posts or /posts.json

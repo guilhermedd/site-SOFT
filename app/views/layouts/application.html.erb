@@ -9,19 +9,28 @@
       <%= csp_meta_tag %>
 
         <%= stylesheet_link_tag "application" %>
-        <%= stylesheet_link_tag 'trix' %>
+          <%= stylesheet_link_tag 'trix' %>
 
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-          <!-- include libraries(jQuery, bootstrap) -->
-          <script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-          <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
-          <script type="text/javascript"
-            src="cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+              crossorigin="anonymous">
+            <!-- include libraries(jQuery, bootstrap) -->
+            <script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+            <script type="text/javascript"
+              src="cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-          <!-- include summernote css/js-->
-          <link href="summernote-bs5.css" rel="stylesheet">
-          <script src="summernote-bs5.js"></script>
+            <!-- include summernote css/js-->
+            <link href="summernote-bs5.css" rel="stylesheet">
+            <script src="summernote-bs5.js"></script>
+            <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="path/to/css/bootstrap.min.css">
+            <script src="path/to/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.19.1/css/mdb.min.css" />
+
+
+
 
   </head>
 
@@ -46,6 +55,9 @@
                 </li>
                 <li class="nav-item">
                   <%= link_to "My Friends" , show_friends_path, class: "nav-link active" %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "Schedule" , schedule_path, class: "nav-link active" %>
                 </li>
               </ul>
               <div class="col-2">
@@ -77,6 +89,124 @@
 
       <%= yield %>
     </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted footer">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <!-- Facebook -->
+          <!-- Right -->
+          <div>
+            <!-- Facebook -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Google -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Linkedin -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Pinterest -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-pinterest"></i>
+            </a>
+
+            <!-- Vkontakte -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-vk"></i>
+            </a>
+
+            <!-- Stack overflow -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+
+            <!-- Youtube -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <!-- Slack -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-slack-hash"></i>
+            </a>
+
+            <!-- Github -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <!-- Dribbble -->
+            <a href="#" class="me-4 text-reset">
+              <i class="fab fa-dribbble"></i>
+            </a>
+
+          </div>
+          <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>MemoLife
+              </h6>
+              <p>
+                Here, at MemoLife, we believe that everyone has a story to tell. We want to help you tell yours.
+                We want to help you tell your story in a way that you can look back on and remember.
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Got any questions? Email us!
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                MemoLife@gmail.com
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -85,6 +215,6 @@
   <%= stylesheet_link_tag 'trix' %>
 
 
-  <%= javascript_importmap_tags %>
+    <%= javascript_importmap_tags %>
 
 </html>

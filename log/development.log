@@ -32925,3 +32925,2928 @@ FOREIGN KEY ("user_id")
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
   [1m[36mUser Destroy (5.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+Started GET "/" for 127.0.0.1 at 2023-06-15 08:52:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1591)
+Importmap skipped missing path: summernote/dist/summernote-bs4.min.js
+  Rendered layout layouts/application.html.erb (Duration: 141.0ms | Allocations: 49991)
+Completed 200 OK in 262ms (Views: 148.1ms | ActiveRecord: 2.2ms | Allocations: 59130)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:52:08 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:52:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:52:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.5/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.5/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.5/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/rack/logger.rb:25:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.7/lib/rack/method_override.rb:24:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.7/lib/rack/runtime.rb:22:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.5/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.7/lib/rack/sendfile.rb:110:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/engine.rb:530:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.5/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.5/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.5/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/rack/logger.rb:25:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.7/lib/rack/method_override.rb:24:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.7/lib/rack/runtime.rb:22:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.5/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.7/lib/rack/sendfile.rb:110:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/engine.rb:530:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/diel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-06-15 08:52:11 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 1253)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/_form.html.erb (Duration: 4.9ms | Allocations: 3019)
+  Rendered users/shared/_regular.html.erb (Duration: 5.4ms | Allocations: 3294)
+  Rendered users/shared/_links.html.erb (Duration: 1.5ms | Allocations: 886)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4665)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 9314)
+Completed 200 OK in 21ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 17052)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-06-15 08:52:14 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"guiddiel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "guiddiel@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.3ms | Allocations: 2452)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"guiddiel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/_form.html.erb (Duration: 1.0ms | Allocations: 1217)
+  Rendered users/shared/_regular.html.erb (Duration: 1.1ms | Allocations: 1299)
+  Rendered users/shared/_links.html.erb (Duration: 0.1ms | Allocations: 173)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1613)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 6119)
+Completed 200 OK in 247ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 7451)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-06-15 08:52:16 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"guiddiel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "guiddiel@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms | Allocations: 2173)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"guiddiel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/_form.html.erb (Duration: 0.9ms | Allocations: 1091)
+  Rendered users/shared/_regular.html.erb (Duration: 1.0ms | Allocations: 1168)
+  Rendered users/shared/_links.html.erb (Duration: 0.1ms | Allocations: 172)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1475)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 5857)
+Completed 200 OK in 244ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 6401)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-06-15 08:52:24 -0300
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/_form.html.erb (Duration: 2.6ms | Allocations: 2555)
+  Rendered users/shared/_regular.html.erb (Duration: 2.9ms | Allocations: 2725)
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 243)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3309)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 7907)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 9901)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-06-15 08:52:37 -0300
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"guiddiel@gmail.com", "username"=>"guiddiel@gmail.com", "first_name"=>"Guilherme", "last_name"=>"Diel", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "guiddiel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "guiddiel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "guiddiel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "first_name", "last_name", "username", "name") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "guiddiel@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-06-15 11:52:37.471369"], ["updated_at", "2023-06-15 11:52:37.471369"], ["first_name", "Guilherme"], ["last_name", "Diel"], ["username", "guiddiel@gmail.com"], ["name", nil]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 265ms (ActiveRecord: 5.5ms | Allocations: 11304)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 08:52:37 -0300
+Processing by WelcomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 462)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 5081)
+Completed 200 OK in 23ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 13207)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 08:52:41 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 4865)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 7304)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:52:41 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:52:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:52:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/posts/new" for 127.0.0.1 at 2023-06-15 08:52:47 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.3ms | Allocations: 2432)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/new.html.erb:18
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3610)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 8338)
+Completed 200 OK in 19ms (Views: 10.0ms | ActiveRecord: 0.5ms | Allocations: 16379)
+
+
+Started POST "/posts" for 127.0.0.1 at 2023-06-15 08:53:22 -0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Me senti bem", "summary"=>"Hoje eu me senti bem", "content"=>"Hoje eu acordei e comi um bom café da manhã", "feeling"=>"Bem", "public"=>"1"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:35:in `block in create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "user_id", "summary", "content", "feeling", "created_at", "updated_at", "time", "day", "public") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Me senti bem"], ["user_id", 2], ["summary", "Hoje eu me senti bem"], ["content", "Hoje eu acordei e comi um bom café da manhã"], ["feeling", "Bem"], ["created_at", "2023-06-15 11:53:22.367675"], ["updated_at", "2023-06-15 11:53:22.367675"], ["time", nil], ["day", nil], ["public", 1]]
+  ↳ app/controllers/posts_controller.rb:35:in `block in create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:35:in `block in create'
+Redirected to http://127.0.0.1:3000/posts/1
+Completed 302 Found in 14ms (ActiveRecord: 3.2ms | Allocations: 7342)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2023-06-15 08:53:22 -0300
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 1.2ms | Allocations: 804)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1537)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6118)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.3ms | Allocations: 9702)
+
+
+Started GET "/posts" for 127.0.0.1 at 2023-06-15 08:53:34 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/posts/index.html.erb:20
+  Rendered posts/_shortPost.html.erb (Duration: 1.9ms | Allocations: 615)
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1795)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6260)
+Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 0.4ms | Allocations: 8671)
+
+
+Started GET "/posts" for 127.0.0.1 at 2023-06-15 08:53:38 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/posts/index.html.erb:20
+  Rendered posts/_shortPost.html.erb (Duration: 0.5ms | Allocations: 350)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1112)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5575)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 7716)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:53:38 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:53:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:53:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/posts/1/edit" for 127.0.0.1 at 2023-06-15 08:53:40 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 3691)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+    @post.public = params[:post][:public] == '1'
+                                ^^^^^^^^^):
+  
+app/controllers/posts_controller.rb:24:in `edit'
+Started GET "/posts/1/edit" for 127.0.0.1 at 2023-06-15 08:55:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 4.4ms | Allocations: 3635)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 7.2ms | Allocations: 4378)
+Importmap skipped missing path: summernote/dist/summernote-bs4.min.js
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 49623)
+Completed 200 OK in 118ms (Views: 48.0ms | ActiveRecord: 4.8ms | Allocations: 74372)
+
+
+Started GET "/posts/1/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:55:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/1/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/posts/1/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:55:01 -0300
+Started GET "/posts/1/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:55:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/1/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/posts/1/summernote-bs5.js"):
+  
+Started PATCH "/posts/1" for 127.0.0.1 at 2023-06-15 08:55:06 -0300
+Processing by PostsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Me senti bem", "summary"=>"Hoje eu me senti bem", "content"=>"Hoje eu acordei e comi um bom café da manhã", "feeling"=>"Bem", "public"=>"1"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `block in update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `block in update'
+Redirected to http://127.0.0.1:3000/posts/1
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms | Allocations: 8518)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2023-06-15 08:55:06 -0300
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 1.7ms | Allocations: 789)
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1533)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6148)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 9027)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2023-06-15 08:55:09 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.9ms | Allocations: 363)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 508)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4974)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 7796)
+
+
+Started GET "/posts/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:55:09 -0300
+Started GET "/posts/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:55:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/posts/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:55:09 -0300
+Processing by PostsController#show as JS
+  Parameters: {"id"=>"summernote-bs5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 3113)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=summernote-bs5):
+  
+app/controllers/posts_controller.rb:75:in `set_post'
+Processing by PostsController#show as CSS
+  Parameters: {"id"=>"summernote-bs5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.4ms | Allocations: 5608)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=summernote-bs5):
+  
+app/controllers/posts_controller.rb:75:in `set_post'
+Started GET "/posts/1/edit" for 127.0.0.1 at 2023-06-15 08:55:12 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.8ms | Allocations: 1532)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1681)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6178)
+Completed 200 OK in 12ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 8751)
+
+
+Started PATCH "/posts/1" for 127.0.0.1 at 2023-06-15 08:55:15 -0300
+Processing by PostsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Me senti bem", "summary"=>"Hoje eu me senti bem", "content"=>"Hoje eu acordei e comi um bom café da manhã", "feeling"=>"Bem", "public"=>"1"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `block in update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `block in update'
+Redirected to http://127.0.0.1:3000/posts/1
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms | Allocations: 4976)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2023-06-15 08:55:15 -0300
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.4ms | Allocations: 363)
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 511)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 4975)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 7562)
+
+
+Started GET "/posts" for 127.0.0.1 at 2023-06-15 08:55:17 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/posts/index.html.erb:20
+  Rendered posts/_shortPost.html.erb (Duration: 1.5ms | Allocations: 615)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1804)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6267)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 8492)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2023-06-15 08:55:21 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.4ms | Allocations: 1383)
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/new.html.erb:18
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2323)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6795)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 9005)
+
+
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 08:55:23 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1624)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 6303)
+Completed 200 OK in 12ms (Views: 5.2ms | ActiveRecord: 0.5ms | Allocations: 11269)
+
+
+Started GET "/friends_index" for 127.0.0.1 at 2023-06-15 08:55:25 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1828)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:52
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 7156)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 7554)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 08:55:28 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 949)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5624)
+Completed 200 OK in 14ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 10092)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 08:57:48 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6169)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 9413)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:57:48 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:57:48 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:57:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 08:58:31 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 6190)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 9373)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:58:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:58:31 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:58:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 08:58:58 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6171)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 9354)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:58:58 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:58:58 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:58:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 08:59:23 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 916)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6148)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 9339)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 08:59:23 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 08:59:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 08:59:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:00:48 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 6149)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 9311)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:00:48 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:00:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:00:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:00:57 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 6148)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 9334)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:00:57 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:00:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:00:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:01:19 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 6147)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.4ms | Allocations: 9331)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:01:19 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:01:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:01:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:01:28 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 6146)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 9333)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:01:28 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:01:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:01:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:01:36 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6145)
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 9329)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:01:36 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:01:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:01:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:02:32 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6147)
+Completed 200 OK in 20ms (Views: 11.4ms | ActiveRecord: 0.8ms | Allocations: 9333)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:02:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:02:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:02:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:02:54 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 6146)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 9317)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:02:54 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:02:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:02:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:03:08 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 6141)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 9323)
+
+
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:03:08 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:03:08 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:03:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:03:48 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6109)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 9286)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:03:48 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:03:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:03:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:06 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 6115)
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 9313)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:06 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:23 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 6110)
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 0.5ms | Allocations: 9299)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:23 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:28 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6110)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 9293)
+
+
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:28 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 4898)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 7386)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4899)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 7252)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4898)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 7232)
+
+
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:45 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 6110)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 9136)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:45 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:47 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4898)
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 0.3ms | Allocations: 7419)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:47 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:58 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6110)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 9121)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:58 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:04:59 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4898)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 7408)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:04:59 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:04:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:04:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:05:04 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6111)
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 9126)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:05:04 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:05:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:05:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:05:17 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6141)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.5ms | Allocations: 9316)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:05:17 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:05:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:05:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:06:45 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 6145)
+Completed 200 OK in 15ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 9304)
+
+
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:06:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:06:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:06:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:06:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:08:43 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 6115)
+Completed 200 OK in 52ms (Views: 34.6ms | ActiveRecord: 0.2ms | Allocations: 9295)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:08:43 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:08:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:08:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:08:44 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4896)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 7414)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:08:44 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:08:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:08:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:09:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:10:13 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 6112)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.4ms | Allocations: 9135)
+
+
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:10:13 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:10:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:10:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:10:17 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4888)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 7410)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:10:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:10:17 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:10:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:10:47 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6143)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 9148)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:10:47 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:10:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:10:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:11:04 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6145)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 9313)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:11:04 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:11:04 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:11:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:11:23 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6145)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 9331)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:11:23 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:11:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:11:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:11:29 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 6144)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 9315)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:11:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:11:29 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:11:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:11:36 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 918)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6148)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 9317)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:11:36 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:11:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:11:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:12:18 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6145)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.4ms | Allocations: 9319)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:12:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:12:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:12:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:12:19 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 4898)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 7404)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:12:20 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:12:20 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:12:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:12:27 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 6145)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 9168)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:12:27 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:12:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:12:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:13:02 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 12104)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.2ms | Allocations: 14604)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:13:02 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:13:02 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:13:02 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:13:04 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 4889)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 7226)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:13:04 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:13:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:13:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:13:53 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 916)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6137)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 9139)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:13:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:13:53 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:13:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:13:55 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 4889)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 7401)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:13:55 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:13:55 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:13:55 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:15:28 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 6130)
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 9136)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:15:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:15:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:15:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:15:29 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 4889)
+Completed 200 OK in 57ms (Views: 39.9ms | ActiveRecord: 0.2ms | Allocations: 7405)
+
+
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:15:29 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:15:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:15:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:15:46 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6138)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 9163)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:15:46 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:15:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:15:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:15:47 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4889)
+Completed 200 OK in 12ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 7413)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:15:47 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:15:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:15:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:16:00 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4944)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 7282)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:16:00 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:16:00 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:16:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:16:27 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6159)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 9162)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:16:27 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:16:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:16:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:18:11 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6161)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 9344)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:18:11 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:18:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:18:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:18:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:18:13 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4889)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 7401)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:18:13 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:18:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:18:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:18:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:18:24 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6162)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 9182)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:18:24 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:18:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:18:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:18:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:18:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:18:25 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 4889)
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 7389)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:18:25 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:18:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:18:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:18:26 -0300
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:18:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:19:51 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 6184)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 9186)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:19:51 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:19:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:19:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:19:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:19:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:19:52 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 4889)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 7383)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:19:52 -0300
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:19:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:19:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:19:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:19:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:21:31 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 6188)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 9208)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:21:31 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:21:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:21:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:21:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:21:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:21:34 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 4889)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 7395)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:21:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:21:34 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:21:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:21:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:21:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:21:39 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 4889)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 7220)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:21:39 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:21:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:21:39 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:21:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:21:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:22:09 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6187)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 9196)
+
+
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:22:09 -0300
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:22:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:22:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:22:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:22:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:22:11 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 4889)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 7428)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:22:11 -0300
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:22:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:22:11 -0300
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:22:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:22:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/posts/new" for 127.0.0.1 at 2023-06-15 09:23:18 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.1ms | Allocations: 2035)
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/new.html.erb:18
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3117)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 7830)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 10349)
+
+
+Started GET "/friends_index" for 127.0.0.1 at 2023-06-15 09:23:40 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1896)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:61
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 7499)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.1ms | Allocations: 8225)
+
+
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:23:56 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.0ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 520)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4975)
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 7955)
+
+
+Started GET "/friends_index" for 127.0.0.1 at 2023-06-15 09:23:59 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1449)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:61
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6652)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms | Allocations: 6939)
+
+
+Started GET "/friends_index" for 127.0.0.1 at 2023-06-15 09:24:57 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1900)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:61
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 11610)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.1ms | Allocations: 12589)
+
+
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:24:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:24:57 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:24:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:24:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:24:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:24:59 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.0ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 520)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4999)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 7981)
+
+
+Started GET "/friends_index" for 127.0.0.1 at 2023-06-15 09:25:00 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1456)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:61
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6659)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 6946)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:25:01 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 915)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5587)
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 8367)
+
+
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:25:02 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4756)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 0.3ms | Allocations: 7819)
+
+
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:26:50 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1612)
+Importmap skipped missing path: summernote/dist/summernote-bs4.min.js
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 23240)
+Completed 200 OK in 30ms (Views: 19.4ms | ActiveRecord: 0.9ms | Allocations: 32036)
+
+
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:26:51 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:26:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:26:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:26:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:26:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:26:52 -0300
+Processing by ConsultationsController#show as HTML
+Completed 404 Not Found in 5ms (ActiveRecord: 0.3ms | Allocations: 2034)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Consultation without an ID):
+  
+app/controllers/consultations_controller.rb:63:in `set_consultation'
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:27:44 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1997)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2093)
+Completed 500 Internal Server Error in 5ms (Allocations: 2970)
+
+
+  
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    1: <p style="color: green"><%= notice %></p>
+    2: 
+    3: <%= render @consultation %>
+    4: 
+    5: <div>
+    6:   <%= link_to "Edit this consultation", edit_consultation_path(@consultation) %> |
+  
+app/views/consultations/show.html.erb:3
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:28:13 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2105)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2201)
+Completed 500 Internal Server Error in 3ms (Allocations: 3344)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"consultations", :id=>nil}, missing required keys: [:id]):
+    2: 
+    3: 
+    4: <div>
+    5:   <%= link_to "Edit this consultation", edit_consultation_path(@consultation) %> |
+    6:   <%= link_to "Back to consultations", consultations_path %>
+    7: 
+    8:   <%= button_to "Destroy this consultation", @consultation, method: :delete %>
+  
+app/views/consultations/show.html.erb:5
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:28:20 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1796)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1883)
+Completed 500 Internal Server Error in 3ms (Allocations: 2147)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"consultations", :id=>nil}, missing required keys: [:id]):
+    2: 
+    3: 
+    4: <div>
+    5:   <%= link_to "Edit this consultation", edit_consultation_path(@consultation) %> |
+    6:   <%= link_to "Back to consultations", consultations_path %>
+    7: 
+    8:   <%= button_to "Destroy this consultation", @consultation, method: :delete %>
+  
+app/views/consultations/show.html.erb:5
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:28:21 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 945)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+Importmap skipped missing path: summernote/dist/summernote-bs4.min.js
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 27309)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.9ms | Allocations: 28273)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:28:21 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:28:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:28:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:28:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:28:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:28:22 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 752)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6035)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 6331)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:28:22 -0300
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:28:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:28:22 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:28:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:28:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:28:23 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 734)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6017)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 6292)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:28:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:28:23 -0300
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:28:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:28:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:28:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:30:17 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2265)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 8524)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 9481)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:30:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:30:17 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:30:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:30:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:30:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:31:10 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 5974)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6070)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 7027)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<ActionView::Base:0x000000000531d8>
+
+      '.freeze;@output_buffer.append=( link_to "Schedule an appointment with a psychologist" , post, class: "btn btn-primary btn-block" , type: "button" );@output_buffer.safe_append='
+                                                                                               ^^^^):
+    4: <div class="container justify-content-center">
+    5:   <div class="row">
+    6:     <div class="col-6">
+    7:       <%= link_to "Schedule an appointment with a psychologist" , post, class: "btn btn-primary btn-block" , type: "button" %>
+    8:     </div>
+    9:   </div>
+   10: </div>
+  
+app/views/consultations/show.html.erb:7
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:31:16 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5640)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 5727)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5995)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<ActionView::Base:0x000000000534a8>
+
+      '.freeze;@output_buffer.append=( link_to "Schedule an appointment with a psychologist" , post, class: "btn btn-primary btn-block" , type: "button" );@output_buffer.safe_append='
+                                                                                               ^^^^):
+    4: <div class="container justify-content-center">
+    5:   <div class="row">
+    6:     <div class="col-6">
+    7:       <%= link_to "Schedule an appointment with a psychologist" , post, class: "btn btn-primary btn-block" , type: "button" %>
+    8:     </div>
+    9:   </div>
+   10: </div>
+  
+app/views/consultations/show.html.erb:7
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:31:17 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1135)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 7419)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 8376)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:31:18 -0300
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:31:18 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:31:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:31:18 -0300
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:31:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:31:50 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 5853)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5949)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 6904)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<ActionView::Base:0x00000000054628>
+
+      '.freeze;@output_buffer.append=( link_to "Show Post" , post, class: "btn btn-primary btn-block" , type: "button" );@output_buffer.safe_append='
+                                                             ^^^^):
+     6:     <div class="d-grid col-6 mx-auto">
+     7:       <div class="space mb-5">
+     8:       </div>
+     9:       <%= link_to "Show Post" , post, class: "btn btn-primary btn-block" , type: "button" %>
+    10:     </div>
+    11:   </div>
+    12: </div>
+  
+app/views/consultations/show.html.erb:9
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:31:57 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1116)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 7400)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 8376)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:31:57 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:31:57 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:31:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:31:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:31:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:31:58 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 831)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 6104)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 6397)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:31:58 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:31:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:31:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:31:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:31:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:32:11 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 660)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 5404)
+Completed 200 OK in 11ms (Views: 5.0ms | ActiveRecord: 0.5ms | Allocations: 10313)
+
+
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:32:11 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 905)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 6280)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.1ms | Allocations: 6576)
+
+
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:32:20 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1131)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 7391)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 8370)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:32:20 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:32:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:32:20 -0300
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:32:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:32:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:33:18 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1121)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 7405)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 8381)
+
+
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:33:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:33:18 -0300
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:33:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:33:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:33:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:33:19 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 829)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 6102)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 6395)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:33:19 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:33:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:33:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:33:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:33:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:33:51 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1123)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 7407)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 8364)
+
+
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:33:52 -0300
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:33:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:33:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:33:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:33:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:34:16 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 932)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 7263)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 8240)
+
+
+Started GET "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2023-06-15 09:34:16 -0300
+Started GET "/summernote-bs5.css" for 127.0.0.1 at 2023-06-15 09:34:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/summernote-bs5.js" for 127.0.0.1 at 2023-06-15 09:34:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.css"):
+  
+Started GET "/path/to/js/bootstrap.min.js" for 127.0.0.1 at 2023-06-15 09:34:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/summernote-bs5.js"):
+  
+Started GET "/path/to/css/bootstrap.min.css" for 127.0.0.1 at 2023-06-15 09:34:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/css/bootstrap.min.css"):
+  
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:35:05 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.0ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 628)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 5367)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 8690)
+
+
+Started GET "/friends_index" for 127.0.0.1 at 2023-06-15 09:35:07 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1801)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7167)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7565)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:35:09 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 935)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 5652)
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 10798)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 09:35:15 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:3:in `index'
+  [1m[36mPost Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/welcome_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4903)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 7462)
+
+
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:35:29 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4794)
+Completed 200 OK in 17ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 7669)
+
+
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:35:29 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 4806)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 7690)
+
+
+Started GET "/schedule" for 127.0.0.1 at 2023-06-15 09:35:30 -0300
+Processing by ConsultationsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consultations/show.html.erb within layouts/application
+  Rendered consultations/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 725)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5985)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 6263)
+
+
+Started GET "/show_friends" for 127.0.0.1 at 2023-06-15 09:35:31 -0300
+Processing by FriendsController#show as HTML
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:97:in `set_friend'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  [1m[36mFriend Load (0.1ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/controllers/friends_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4782)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 0.4ms | Allocations: 7632)
+
+
+Started GET "/friends_index" for 127.0.0.1 at 2023-06-15 09:35:31 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1467)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:64
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6708)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 6995)
+
+

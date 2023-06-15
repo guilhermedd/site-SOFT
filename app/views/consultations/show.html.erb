@@ -1,10 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @consultation %>
 
-<div>
-  <%= link_to "Edit this consultation", edit_consultation_path(@consultation) %> |
-  <%= link_to "Back to consultations", consultations_path %>
-
-  <%= button_to "Destroy this consultation", @consultation, method: :delete %>
+<div class="row justify-content-center mb-5">
+  <div class="col-6 mb-5">
+    <div class="d-grid col-6 mx-auto">
+      <div class="space mb-5">
+      </div>
+      <button type="button" class="btn btn-primary">Schedule an appointment with a psychologist</button>
+    </div>
+  </div>
 </div>
